@@ -1,0 +1,153 @@
+.HomepageBanner{
+    background-image: url("../image/red\ woman\ img.jpg");
+    height: 400px;
+}
+
+.main-banner{
+    height: 612px;
+    position: relative;
+}
+
+.main-banner::after{
+    content: "";
+    position: absolute;
+    width: 300px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: red;
+}
+
+.main-banner::before{
+    content: "";
+    background-image: url(../image/dot-group2.png);
+    position: absolute;
+    left: 0px;
+    right: 272px;
+    bottom: -28px;
+    top: 0px;
+    background-repeat: no-repeat;
+    background-size: 55px;
+    z-index: -1;
+    background-position: bottom right;
+}
+
+.top-navbar{
+    background-color: transparent !important;
+}
+
+.navbar-content{
+    margin-left: 50px !important;
+}
+
+.nav-content-item{
+    margin-right: 50px;
+}
+
+.nav-content-item:last-child{
+    margin-right: 0px;
+}
+
+.banner-parent{
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 98px;
+}
+
+.banner-content-main{
+    width: 499px;
+    margin-left: 50px;
+}
+
+.banner-content-header{
+    font-size: 46px;
+    line-height: 46px;
+    font-weight: 600;
+}
+
+.banner-content-subheader{
+    font-size: 18px;
+}
+
+.banner-image{
+    flex: 1;
+    text-align: right;
+    position: relative;
+}
+
+.banner-holder{
+    position: absolute;
+    right: 0px;
+}
+
+.banner-holder::after{
+    content: "";
+    background-image: url(../image/dot-group.png);
+    position: absolute;
+    left: -27px;
+    right: 0px;
+    top: 100px;
+    bottom: 0px;
+    background-repeat: no-repeat;
+    background-size: 55px;
+}
+
+.banner-holder::before{
+    
+}
+
+.banner-img-main{
+    width: 550px;
+}
+
+.homepageContent{
+    margin-top: 2px;
+}
+
+.banner-cta{
+    background: red;
+    display: block;
+    padding: 11px;
+    width: 204px;
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 20px;
+    box-shadow: 0px 3px 14px 1px rgba(0, 0, 0, 0.38);
+    color: #ffffff;
+}
+.about{
+    display: flex;
+    justify-content: space-evenly;
+}   
+
+.rectangle{
+    background-color:#EAEAEA;
+}
+.Roumpini{
+    padding-top: 130px;
+}
+.square{
+    background-color:#F4F4F4
+}
+.resources{
+    display:flex;
+    justify-content: space-between;
+}
+.services{
+    display:flex;
+    justify-content: space-evenly ;
+}
+.outsourcing{
+    padding-top: 100px;
+}
+.Approach{
+    display:flex;
+    justify-content: space-evenly;
+}
