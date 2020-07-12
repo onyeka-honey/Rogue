@@ -69,10 +69,10 @@
             </a>
           </div>
           <div class="banner-logos">
-            <img src="image/sample-logo.svg" alt="" class="banner-logo-single">
-            <img src="image/sample-logo1.svg" alt="" class="banner-logo-single">
-            <img src="image/sample-logo2.svg" alt="" class="banner-logo-single">
-            <img src="image/sample-logo3.svg" alt="" class="banner-logo-single">
+            <img src="image/Rochester-logo1-2.png" alt="" class="banner-logo-single" width="55">
+            <img src="image/union-diagnostic.png" alt="" class="banner-logo-single" width="65">
+            <img src="image/cropped-Wemy-Logo-Menu-Bar-3.png" alt="" class="banner-logo-single" width="85">
+            <img src="image/Cedar-Hive-White-01-01-1-e1575379127722.png" alt="" class="banner-logo-single" width="130">
           </div>
         </div>
       </div>
@@ -184,7 +184,7 @@
           <div class="offer-single-holder">
             <div class="offer-single" id="offer-3">
               <img src="image/correct.svg" alt="" class="offer-single-img">
-              <p class="offer-single-text">Recuritment and executive Search</p>
+              <p class="offer-single-text">Recruitment and executive Search</p>
             </div>
           </div>
 
@@ -196,7 +196,7 @@
           </div>
         </div>
 
-        <div class="text-center offer-single-content">
+        <div class="offer-single-content">
 
         </div>
       </div>
@@ -438,19 +438,19 @@
         switch (id) {
           case 'offer-1':
             return (
-              $('<div>Offer one</div>').appendTo('.offer-single-content')
+              $('<img src="image/Rochester-logo1-2.png"><p>HR Outsourcing Services (Interim HR Managers)</p>').appendTo('.offer-single-content')
             )
           case 'offer-2':
             return (
-              $('<div>Offer two</div>').appendTo('.offer-single-content')
+              $('<ul><li>Define learning and development strategy and related programmes appropriate for your organisation.</li><li>Design, develop and implement competency skills and knowledge frameworks</li><li>Facilitate management retreat programmes </li><li>Organise seminars, workshops & conferences/forums, special events</li></ul>').appendTo('.offer-single-content')
             )
           case 'offer-3':
-            return ($('<div>Offer three</div>').appendTo('.offer-single-content'))
+            return ($('<ul><li>Executive Search Services</li><li>E-Recruitment / CV Handling / Mass Recruitment</li><li>Resume / Certificate Verification</li><li>Reference Checking</li><li>Integrity Due Diligence</li></ul>').appendTo('.offer-single-content'))
           case 'offer-4':
-            return ($('<div>Offer four</div>').appendTo('.offer-single-content'))
+            return ($('<ul><li>Processing of all classes of Visas</li><li>Processing / Renewal / Additions of Quota Approval</li><li>Regularisation of Visa</li><li>General itinerary advisory</li><li>Hotel and Flight Reservations both international and local</li><li>Protocol services (Meet & Greet): Aiding immigration process at the airport upon arrival of guest(s).</li></ul>').appendTo('.offer-single-content'))
           default:
             return (
-              $('<div>Offer one</div>').appendTo('.offer-single-content')
+              $('<img src="image/Rochester-logo1-2.png"><p>HR Outsourcing Services (Interim HR Managers)</p>').appendTo('.offer-single-content')
             )
         }
       }

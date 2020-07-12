@@ -161,7 +161,7 @@
 
 .banner-logo-single{
     margin-right: 40px;
-    width: 35px;
+    /* width: 50px; */
 }
 
 .about{
@@ -235,9 +235,9 @@
 .services{
     padding: 100px 0px;
 }
-.outsourcing{
+/* .outsourcing{
 
-}
+} */
 
 .session-header{
     margin-bottom: 50px;
@@ -382,8 +382,14 @@
     margin-left: 150px;
 }
 
-.offer-single-content-img{
-    width: 390px
+.offer-single-content img{
+    /* width: 120px; */
+    margin-left: 130px;
+}
+
+.offer-single-content p{
+    margin-top: 25px;
+    text-align: center;
 }
 
 .how-we-work-section{
