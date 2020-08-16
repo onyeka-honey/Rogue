@@ -84,9 +84,9 @@ WSGI_APPLICATION = 'roumpini.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('POSTGRES_DB', default='DB_NAME'),
-        'USER': os.environ.get('POSTGRES_USER', default='DB_USER'),
-        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', default='DB_PASSWORD'),
+        'NAME': os.environ.get('POSTGRES_DB', default='rogue'),
+        'USER': os.environ.get('POSTGRES_USER', default='rogue'),
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', default='rogue'),
         'HOST': 'db',
         'PORT': 5432
     }

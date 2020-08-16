@@ -214,8 +214,10 @@
         <div class="how-we-work-content">
           <div class="how-work-left-parent how-work-width">
             <h6 class="gen-main-header">Definition of Client’s needs & Expectation</h6>
-            <p class="gen-main-body">Obtain a precise understanding of
-              clients expectations.Define the profile description</p>
+              <ul style="list-style-type:disc;">
+                <li>Obtain a precise understanding of clients expectations.</li> 
+                <li>Define the profile description.</li>
+              </ul>
           </div>
           <div class="how-work-left-parent how-work-width">
             <h6 class="gen-main-header">Advertising & Sourcing through
@@ -223,11 +225,6 @@
               <ul style="list-style-type:disc;">
                 <li>Professional and social networking</li> 
                 <li>Advertising in regional press & online</li>
-                <li>Direct sourcing or headhunting</li>
-                <li>Events</li> 
-                <li>Participating in career fairs on behalf of clients</li>
-              
-              
               </ul>
           </div>
         </div>
@@ -242,29 +239,17 @@
             <ul style="list-style-type:disc;">
               <li> Evaluation of the candidates through phone, face-to-face or digital platform interview;</li>
               <li> Assessments and test (technical and psychometric)</li>
-              <li> Reference checks</li>
             </ul>
           </div>
           <div class="how-work-right-parent how-work-width">
             <h6 class="gen-main-header">Candidate Submission</h6>
             <ul style="list-style-type:disc;">
-              <li>Presentation of each candidate to the client with</li>
-              <li>CV</li>
-              <li>Application form</li>
+              <li>Presentation of each candidate to the client with CV</li>
               <li>Debrief of the interviews and eventual test results.</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="how-we-work-bottom how-work-center-parent how-work-width">
-        <h6 class="gen-main-header">Project Closure</h6>
-        <ul style="list-style-type:disc;">
-          <li>Review actual deliverables against target</li>
-          <li>Close contract and finalise report.</li>
-          
-        </ul>
-      </div>
-
     </div>
   </div>
 
@@ -288,7 +273,7 @@
         </div>
 
         <div class="team-main-holder" id="team-2">
-          <img src="{% static 'image/lara.png' %}" alt="" class="team-img">
+          <img src="{% static 'image/man.jpeg' %}" alt="" class="team-img">
           <p class="team-name">Lara</p>
           <div class="team-role-img">
             <h2 class="team-role">Role</h2>
@@ -299,7 +284,7 @@
         </div>
 
         <div class="team-main-holder" id="team-3">
-          <img src="{% static 'image/lara.png' %}" alt="" class="team-img">
+          <img src="{% static 'image/manu.jpeg' %}" alt="" class="team-img">
           <p class="team-name">Lara</p>
           <div class="team-role-img">
             <h2 class="team-role">Role</h2>
@@ -440,19 +425,19 @@
         switch (id) {
           case 'offer-1':
             return (
-              $("<img src=\"{% static 'image/Rochester-logo1-2.png' %}\"><p>HR Outsourcing Services (Interim HR Managers)</p>").appendTo('.offer-single-content')
+              $("<img src=\"{% static 'image/outsourcing.jpg' %}\"><p>HR Outsourcing Services (Interim HR Managers)</p>").appendTo('.offer-single-content')
             )
           case 'offer-2':
             return (
-              $('<ul><li>Define learning and development strategy and related programmes appropriate for your organisation.</li><li>Design, develop and implement competency skills and knowledge frameworks</li><li>Facilitate management retreat programmes </li><li>Organise seminars, workshops & conferences/forums, special events</li></ul>').appendTo('.offer-single-content')
+              $("<img src=\"{% static 'image/learnin.jpg' %}\" height=400 width=400><p><ul><li>Define learning and development strategy and related programmes appropriate for your organisation.</li><li>Design, develop and implement competency skills and knowledge frameworks</li><li>Facilitate management retreat programmes </li><li>Organise seminars, workshops & conferences/forums, special events</li></ul></p>").appendTo('.offer-single-content')
             )
           case 'offer-3':
-            return ($('<ul><li>Executive Search Services</li><li>E-Recruitment / CV Handling / Mass Recruitment</li><li>Resume / Certificate Verification</li><li>Reference Checking</li><li>Integrity Due Diligence</li></ul>').appendTo('.offer-single-content'))
+            return ($("<img src=\"{% static 'image/recruit.jpg' %}\"><ul><li>Executive Search Services</li><li>E-Recruitment / CV Handling / Mass Recruitment</li><li>Resume / Certificate Verification</li><li>Reference Checking</li><li>Integrity Due Diligence</li></ul>").appendTo('.offer-single-content'))
           case 'offer-4':
-            return ($('<ul><li>Processing of all classes of Visas</li><li>Processing / Renewal / Additions of Quota Approval</li><li>Regularisation of Visa</li><li>General itinerary advisory</li><li>Hotel and Flight Reservations both international and local</li><li>Protocol services (Meet & Greet): Aiding immigration process at the airport upon arrival of guest(s).</li></ul>').appendTo('.offer-single-content'))
+            return ($("<img width=400 height=400 src=\"{% static 'image/immigration.jpg' %}\"><ul><li>Processing of all classes of Visas</li><li>Processing / Renewal / Additions of Quota Approval</li><li>Regularisation of Visa</li><li>General itinerary advisory</li><li>Hotel and Flight Reservations both international and local</li><li>Protocol services (Meet & Greet): Aiding immigration process at the airport upon arrival of guest(s).</li></ul>").appendTo('.offer-single-content'))
           default:
             return (
-              $("<img src=\"{% static 'image/Rochester-logo1-2.png' %}\"><p>HR Outsourcing Services (Interim HR Managers)</p>").appendTo('.offer-single-content')
+              $("<img src=\"{% static 'image/outsourcing.jpg' %}\"><p>HR Outsourcing Services (Interim HR Managers)</p>").appendTo('.offer-single-content')
             )
         }
       }

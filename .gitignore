@@ -3,3 +3,6 @@ home/__pycache__
 roumpini/__pycache__
 db.sqlite3
 docker-compose-prod.yml
+home/migrations/__pycache__
+.DS_Store
+static/.DS_Store
