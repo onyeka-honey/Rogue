@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 
@@ -10,7 +11,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" />
 
   <!-- FONTS -->
   <link
@@ -27,7 +28,7 @@
         <a class="navbar-brand" href="#">
 
           <div style="height: 100px;">
-            <img src="./image/ROUMPINI RESOURCES LOGO (1).png" height="100%" />
+            <img src="{% static 'image/roumpinilogo.png' %}" height="100%" />
           </div>
 
         </a>
@@ -69,16 +70,16 @@
             </a>
           </div>
           <div class="banner-logos">
-            <img src="image/Rochester-logo1-2.png" alt="" class="banner-logo-single" width="55">
-            <img src="image/union-diagnostic.png" alt="" class="banner-logo-single" width="65">
-            <img src="image/cropped-Wemy-Logo-Menu-Bar-3.png" alt="" class="banner-logo-single" width="85">
-            <img src="image/Cedar-Hive-White-01-01-1-e1575379127722.png" alt="" class="banner-logo-single" width="130">
+            <img src="{% static 'image/Rochester-logo1-2.png' %}" alt="" class="banner-logo-single" width="55">
+            <img src="{% static 'image/union-diagnostic.png' %}" alt="" class="banner-logo-single" width="65">
+            <img src="{% static 'image/cropped-Wemy-Logo-Menu-Bar-3.png' %}" alt="" class="banner-logo-single" width="85">
+            <img src="{% static 'image/Cedar-Hive-White-01-01-1-e1575379127722.png' %}" alt="" class="banner-logo-single" width="130">
           </div>
         </div>
       </div>
       <div class="banner-image">
         <div class="banner-holder">
-          <img src="image/bg-banner.png" class="banner-img-main" />
+          <img src="{% static 'image/bg-banner.png' %}" class="banner-img-main" />
         </div>
       </div>
     </div>
@@ -86,7 +87,7 @@
   <div class="rectangle who-we-are" id="about">
     <div class="container about">
       <div>
-        <img src="image/Man.png" class="who-we-are-img" />
+        <img src="{% static 'image/Man.png' %}" class="who-we-are-img" />
       </div>
       <div class="Roumpini">
         <h6 class="small-header-red small-header">Welcome</h6>
@@ -98,7 +99,7 @@
         </p>
         <div class="small-header-red cta-text">
           Speak to us
-          <img src="image/left-arrow.svg" />
+          <img src="{% static 'image/left-arrow.svg' %}" />
         </div>
       </div>
     </div>
@@ -113,7 +114,7 @@
         <div class="card">
           <div class="card-body">
             <div class="card-img-holder">
-              <img src="image/integrity.svg" alt="" class="card-img">
+              <img src="{% static 'image/integrity.svg' %}" alt="" class="card-img">
             </div>
             <h3 class="card-title">Integrity</h3>
             <p class="card-text">Our integrity fosters trust</br>
@@ -124,7 +125,7 @@
         <div class="card">
           <div class="card-body">
             <div class="card-img-holder">
-              <img src="image/excellence.svg" alt="" class="card-img">
+              <img src="{% static 'image/excellence.svg' %}" alt="" class="card-img">
             </div>
             <h3 class="card-title">Excellence</h3>
             <p class="card-text">We Inspire people to give </br>
@@ -135,7 +136,7 @@
         <div class="card">
           <div class="card-body">
             <div class="card-img-holder">
-              <img src="image/result-d.svg" alt="" class="card-img">
+              <img src="{% static 'image/result-d.svg' %}" alt="" class="card-img">
             </div>
             <h3 class="card-title">Result Driven</h3>
             <p class="card-text">We Invest time and resources</br>
@@ -146,7 +147,7 @@
         <div class="card">
           <div class="card-body">
             <div class="card-img-holder">
-              <img src="image/knowledge.svg" alt="" class="card-img">
+              <img src="{% static 'image/knowledge.svg' %}" alt="" class="card-img">
             </div>
             <h3 class="card-title">Knowledge</h3>
             <p class="card-text">We celebrate new and fresh approaches to</br>
@@ -169,28 +170,28 @@
 
           <div class="offer-single-holder">
             <div class="offer-single offer-single-active" id="offer-1">
-              <img src="image/correct.svg" alt="" class="offer-single-img">
+              <img src="{% static 'image/correct.svg' %}" alt="" class="offer-single-img">
               <p class="offer-single-text">Outsourcing</p>
             </div>
           </div>
 
           <div class="offer-single-holder">
             <div class="offer-single" id="offer-2">
-              <img src="image/correct.svg" alt="" class="offer-single-img">
+              <img src="{% static 'image/correct.svg' %}" alt="" class="offer-single-img">
               <p class="offer-single-text">Learning and development</p>
             </div>
           </div>
 
           <div class="offer-single-holder">
             <div class="offer-single" id="offer-3">
-              <img src="image/correct.svg" alt="" class="offer-single-img">
+              <img src="{% static 'image/correct.svg' %}" alt="" class="offer-single-img">
               <p class="offer-single-text">Recruitment and executive Search</p>
             </div>
           </div>
 
           <div class="offer-single-holder">
             <div class="offer-single" id="offer-4">
-              <img src="image/correct.svg" alt="" class="offer-single-img">
+              <img src="{% static 'image/correct.svg' %}" alt="" class="offer-single-img">
               <p class="offer-single-text">Immigration consultancy and Protocol Management</p>
             </div>
           </div>
@@ -232,7 +233,7 @@
         </div>
 
         <div class="how-we-work-img">
-          <img src="image/approach.png" alt="alt" class="how-middle-img">
+          <img src="{% static 'image/approach.png' %}" alt="alt" class="how-middle-img">
         </div>
 
         <div class="how-we-work-content">
@@ -276,34 +277,34 @@
 
       <div class="team-main">
         <div class="team-main-holder" id="team-1">
-          <img src="image/lara.png" alt="" class="team-img">
+          <img src="{% static 'image/lara.png' %}" alt="" class="team-img">
           <p class="team-name">Lara</p>
           <div class="team-role-img">
             <h2 class="team-role">Role</h2>
             <a href="#" class="team-social-link">
-              <img src="image/linkedin.svg" alt="" class="team-social-icon">
+              <img src="{% static 'image/linkedin.svg' %}" alt="" class="team-social-icon">
             </a>
           </div>
         </div>
 
         <div class="team-main-holder" id="team-2">
-          <img src="image/lara.png" alt="" class="team-img">
+          <img src="{% static 'image/lara.png' %}" alt="" class="team-img">
           <p class="team-name">Lara</p>
           <div class="team-role-img">
             <h2 class="team-role">Role</h2>
             <a href="#" class="team-social-link">
-              <img src="image/linkedin.svg" alt="" class="team-social-icon">
+              <img src="{% static 'image/linkedin.svg' %}" alt="" class="team-social-icon">
             </a>
           </div>
         </div>
 
         <div class="team-main-holder" id="team-3">
-          <img src="image/lara.png" alt="" class="team-img">
+          <img src="{% static 'image/lara.png' %}" alt="" class="team-img">
           <p class="team-name">Lara</p>
           <div class="team-role-img">
             <h2 class="team-role">Role</h2>
             <a href="#" class="team-social-link">
-              <img src="image/linkedin.svg" alt="" class="team-social-icon">
+              <img src="{% static 'image/linkedin.svg' %}" alt="" class="team-social-icon">
             </a>
           </div>
         </div>
@@ -332,7 +333,7 @@
 
       <div class="footer-main">
         <div>
-          <img src="image/roumpini-logo.svg" alt="" class="footer-logo">
+          <img src="{% static 'image/roumpinilogo.png' %}" alt="" class="footer-logo">
         </div>
         <div>
           <p class="footer-main-header">Company</p>
@@ -366,13 +367,13 @@
           <a href="" class="footer-email">info@roumpini.com</a>
           <div class="footer-social">
             <a href="" class="footer-social-single">
-              <img src="image/facebook.svg" alt="">
+              <img src="{% static 'image/facebook.svg' %}" alt="">
             </a>
             <a href="" class="footer-social-single">
-              <img src="image/twitter.svg" alt="">
+              <img src="{% static 'image/twitter.svg' %}" alt="">
             </a>
             <a href="" class="footer-social-single">
-              <img src="image/linkd.svg" alt="">
+              <img src="{% static 'image/linkd.svg' %}" alt="">
             </a>
           </div>
         </div>
@@ -384,7 +385,8 @@
     <div class="contact-modal-main">
       <div class="close-form">X</div>
       <div>
-        <form action="">
+        <form action="{% url 'messenger' %}" method="POST">
+          {% csrf_token %}
           <div class="form-field-single">
             <label for="name" class="form-label">Full name</label>
             <input type="text" name="name" class="form-input name">
@@ -425,8 +427,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="javascripts/jquery.easing.1.3.js"></script>
-  <script src="javascripts/script.js"></script>
+  <script src="{% static 'javascripts/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'javascripts/script.js' %}"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
 
   <script>
@@ -438,7 +440,7 @@
         switch (id) {
           case 'offer-1':
             return (
-              $('<img src="image/Rochester-logo1-2.png"><p>HR Outsourcing Services (Interim HR Managers)</p>').appendTo('.offer-single-content')
+              $("<img src=\"{% static 'image/Rochester-logo1-2.png' %}\"><p>HR Outsourcing Services (Interim HR Managers)</p>").appendTo('.offer-single-content')
             )
           case 'offer-2':
             return (
@@ -450,7 +452,7 @@
             return ($('<ul><li>Processing of all classes of Visas</li><li>Processing / Renewal / Additions of Quota Approval</li><li>Regularisation of Visa</li><li>General itinerary advisory</li><li>Hotel and Flight Reservations both international and local</li><li>Protocol services (Meet & Greet): Aiding immigration process at the airport upon arrival of guest(s).</li></ul>').appendTo('.offer-single-content'))
           default:
             return (
-              $('<img src="image/Rochester-logo1-2.png"><p>HR Outsourcing Services (Interim HR Managers)</p>').appendTo('.offer-single-content')
+              $("<img src=\"{% static 'image/Rochester-logo1-2.png' %}\"><p>HR Outsourcing Services (Interim HR Managers)</p>").appendTo('.offer-single-content')
             )
         }
       }

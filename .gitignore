@@ -1,0 +1,5 @@
+venv/
+home/__pycache__
+roumpini/__pycache__
+db.sqlite3
+docker-compose-prod.yml
