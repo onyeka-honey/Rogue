@@ -778,3 +778,7 @@
     cursor: pointer;
     transition: all 0.3s ease-in;
 }
+
+.circular-image{
+    border-radius: 5em;
+}
