@@ -64,8 +64,8 @@
         <div>
           <div class="banner-content-main">
             <h2 class="banner-content-header">Grow your business and support your team.</h2>
-            <p class="banner-content-subheader">Supporting business and the people who drive them..</p>
-            <a class="banner-cta" href="#">
+            <p class="banner-content-subheader">Supporting businesses and the people who drive them..</p>
+            <a class="banner-cta" href="#contact">
               Contact now
             </a>
           </div>
@@ -92,14 +92,14 @@
       <div class="Roumpini">
         <h6 class="small-header-red small-header">Welcome</h6>
         <h3 class="gen-main-header">Who we are?</h3>
-        <p class="gen-main-body">Roumpini Resources is a affront line firm with best practice standards</br>
+        <p class="gen-main-body">Roumpini Resources is a front line firm with best practice standards</br>
           with our services in outsourcing/recruitment ,protocol management, training </br>
           and insights. our clients benefit from the best thinking to the most </br> responsive
           human capital consultancy.
         </p>
         <div class="small-header-red cta-text">
-          Speak to us
-          <img src="{% static 'image/left-arrow.svg' %}" />
+         <a href="#contact"> Speak to us
+          <img src="{% static 'image/left-arrow.svg' %}" /></a>
         </div>
       </div>
     </div>
@@ -178,14 +178,14 @@
           <div class="offer-single-holder">
             <div class="offer-single" id="offer-2">
               <img src="{% static 'image/correct.svg' %}" alt="" class="offer-single-img">
-              <p class="offer-single-text">Learning and development</p>
+              <p class="offer-single-text">Learning and Development</p>
             </div>
           </div>
 
           <div class="offer-single-holder">
             <div class="offer-single" id="offer-3">
               <img src="{% static 'image/correct.svg' %}" alt="" class="offer-single-img">
-              <p class="offer-single-text">Recruitment and executive Search</p>
+              <p class="offer-single-text">Recruitment and Executive Search</p>
             </div>
           </div>
 
@@ -263,7 +263,7 @@
       <div class="team-main">
         <div class="team-main-holder" id="team-1">
           <img src="{% static 'image/lara.png' %}" alt="" class="team-img">
-          <p class="team-name">Lara</p>
+          <p class="team-name">Omolara Norman</p>
           <div class="team-role-img">
             <h2 class="team-role">Role</h2>
             <a href="#" class="team-social-link">
@@ -273,8 +273,8 @@
         </div>
 
         <div class="team-main-holder" id="team-2">
-          <img src="{% static 'image/man.jpeg' %}" alt="" class="team-img">
-          <p class="team-name">Lara</p>
+          <img src="{% static 'image/man.jpeg' %}" alt="" class="team-img circular-image">
+          <p class="team-name">Segun-Niyi Adedoyin</p>
           <div class="team-role-img">
             <h2 class="team-role">Role</h2>
             <a href="#" class="team-social-link">
@@ -284,8 +284,8 @@
         </div>
 
         <div class="team-main-holder" id="team-3">
-          <img src="{% static 'image/manu.jpeg' %}" alt="" class="team-img">
-          <p class="team-name">Lara</p>
+          <img src="{% static 'image/manu.jpeg' %}" alt="" class="team-img circular-image">
+          <p class="team-name">Oluseun Olomodosi</p>
           <div class="team-role-img">
             <h2 class="team-role">Role</h2>
             <a href="#" class="team-social-link">
@@ -326,16 +326,16 @@
             <a href="#" class="footer-main-li-link">
               <li>Home</li>
             </a>
-            <a href="#" class="footer-main-li-link">
+            <a href="#about" class="footer-main-li-link">
               <li>About</li>
             </a>
-            <a href="#" class="footer-main-li-link">
+            <a href="#services" class="footer-main-li-link">
               <li>Services</li>
             </a>
-            <a href="#" class="footer-main-li-link">
+            <a href="#teams" class="footer-main-li-link">
               <li>Team</li>
             </a>
-            <a href="#" class="footer-main-li-link">
+            <a href="#contact" class="footer-main-li-link">
               <li>Contact us</li>
             </a>
           </ul>
@@ -343,9 +343,8 @@
         <div>
           <p class="footer-main-header">Contact</p>
           <div>
-            <p class="footer-address-phone">Lorem ipsum</p>
-            <p class="footer-address-phone">Lorem ipsum</p>
-            <p class="footer-address-phone">+23470123456789</p>
+            <p class="footer-address-phone">Herbert Maculay Way Yaba Lagos</p>
+            <p class="footer-address-phone">+2348172165751</p>
           </div>
         </div>
         <div>
@@ -357,7 +356,7 @@
             <a href="" class="footer-social-single">
               <img src="{% static 'image/twitter.svg' %}" alt="">
             </a>
-            <a href="" class="footer-social-single">
+            <a href="https://instagram.com/roumpini.resources?igshid=44aeejexqwgm" class="footer-social-single">
               <img src="{% static 'image/linkd.svg' %}" alt="">
             </a>
           </div>
@@ -424,20 +423,20 @@
       let offerSelect = id => {
         switch (id) {
           case 'offer-1':
-            return (
-              $("<img src=\"{% static 'image/outsourcing.jpg' %}\"><p>HR Outsourcing Services (Interim HR Managers)</p>").appendTo('.offer-single-content')
+            return (null
+              // $("<img src=\"{% static 'image/outsourcing.jpg' %}\"><p>HR Outsourcing Services (Interim HR Managers)</p>").appendTo('.offer-single-content')
             )
           case 'offer-2':
-            return (
-              $("<img src=\"{% static 'image/learnin.jpg' %}\" height=400 width=400><p><ul><li>Define learning and development strategy and related programmes appropriate for your organisation.</li><li>Design, develop and implement competency skills and knowledge frameworks</li><li>Facilitate management retreat programmes </li><li>Organise seminars, workshops & conferences/forums, special events</li></ul></p>").appendTo('.offer-single-content')
+            return ( null
+              // $("<img src=\"{% static 'image/learnin.jpg' %}\" height=400 width=400><p><ul><li>Define learning and development strategy and related programmes appropriate for your organisation.</li><li>Design, develop and implement competency skills and knowledge frameworks</li><li>Facilitate management retreat programmes </li><li>Organise seminars, workshops & conferences/forums, special events</li></ul></p>").appendTo('.offer-single-content')
             )
           case 'offer-3':
-            return ($("<img src=\"{% static 'image/recruit.jpg' %}\"><ul><li>Executive Search Services</li><li>E-Recruitment / CV Handling / Mass Recruitment</li><li>Resume / Certificate Verification</li><li>Reference Checking</li><li>Integrity Due Diligence</li></ul>").appendTo('.offer-single-content'))
+            return null //($("<img src=\"{% static 'image/recruit.jpg' %}\"><ul><li>Executive Search Services</li><li>E-Recruitment / CV Handling / Mass Recruitment</li><li>Resume / Certificate Verification</li><li>Reference Checking</li><li>Integrity Due Diligence</li></ul>").appendTo('.offer-single-content'))
           case 'offer-4':
-            return ($("<img width=400 height=400 src=\"{% static 'image/immigration.jpg' %}\"><ul><li>Processing of all classes of Visas</li><li>Processing / Renewal / Additions of Quota Approval</li><li>Regularisation of Visa</li><li>General itinerary advisory</li><li>Hotel and Flight Reservations both international and local</li><li>Protocol services (Meet & Greet): Aiding immigration process at the airport upon arrival of guest(s).</li></ul>").appendTo('.offer-single-content'))
+            // return ($("<img width=400 height=400 src=\"{% static 'image/immigration.jpg' %}\"><ul><li>Processing of all classes of Visas</li><li>Processing / Renewal / Additions of Quota Approval</li><li>Regularisation of Visa</li><li>General itinerary advisory</li><li>Hotel and Flight Reservations both international and local</li><li>Protocol services (Meet & Greet): Aiding immigration process at the airport upon arrival of guest(s).</li></ul>").appendTo('.offer-single-content'))
           default:
-            return (
-              $("<img src=\"{% static 'image/outsourcing.jpg' %}\"><p>HR Outsourcing Services (Interim HR Managers)</p>").appendTo('.offer-single-content')
+            return ( null
+              // $("<img src=\"{% static 'image/outsourcing.jpg' %}\"><p>HR Outsourcing Services (Interim HR Managers)</p>").appendTo('.offer-single-content')
             )
         }
       }
@@ -449,15 +448,15 @@
         switch (id) {
           case 'team-1':
             return (
-              $('<div>Team one</div>').appendTo('.team-modal-content')
+              $('<div>Omolara Norman is an Experienced Human Resource Professional with over 10 years’ experience. Her diverse interdisciplinary skills have been laid to bare in how she solves a personnel-related most difficult problem</div>').appendTo('.team-modal-content')
             )
           case 'team-2':
             return (
-              $('<div>Team two</div>').appendTo('.team-modal-content')
+              $('<div>Mr. Segun-Niyi Adedoyin holds a Bachelor of Science Degree in Botany from University of Ilorin, Nigeria. He is a seasoned consultant with over seventeen years of experience in medium and largescale industries. Segun-Niyi has worked and consult for various organizations such as manufacturing, financial services, training, consulting, construction and oil &amp; gas industries.</div>').appendTo('.team-modal-content')
             )
           case 'team-3':
             return (
-              $('<div>Team three</div>').appendTo('.team-modal-content')
+              $('<div>Oluseun Olomodosi is the Chief Operating Officer of Arcadia Access Services Limited. He holds a Bachelor of Science Degree in Agriculture, and a Post Graduate Diploma in Management. He is responsible for the development, design, operation, and improvement of the systems that create and deliver the firm\'s products/services</div>').appendTo('.team-modal-content')
             )
         }
 
