@@ -20,7 +20,7 @@ def email_sender(request):
         text_content='Name: ' + name + '<br>' + 'Email: ' + email + '<br>' + 'Phone: ' + phone + '<br>' + 'Message: ' + message
         html_content='Name: ' + name + '<br>' + 'Email: ' + email + '<br>' + 'Phone: ' + phone + '<br>' + 'Message: ' + message
         from_email='hello@roumpiniresource.com'
-        to=['fbilesanmi@gmail.com',]
+        to=['fbilesanmi@gmail.com', 'larnorm@gmail.com']
 
         email_message = EmailMultiAlternatives(subject, text_content, from_email, to)
         email_message.attach_alternative(html_content, 'text/html')
