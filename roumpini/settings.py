@@ -30,7 +30,7 @@ SECRET_KEY = '#i*p$4tl@@7524=g1w&=z#@!@=8y*y0$+psldvhr@$-e(nl8lc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.roumpini.com', 'roumpini.com', '.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['www.roumpiniresource.com', 'roumpiniresource.com', '.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
