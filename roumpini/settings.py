@@ -142,7 +142,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.zoho.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'hello@roumpiniresource.com'
-EMAIL_HOST_PASSWORD = 'Signout87#'
+EMAIL_HOST_PASSWORD = 'Onyekababy2'
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 
