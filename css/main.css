@@ -167,7 +167,7 @@
 .about{
     display: flex;
     justify-content: space-evenly;
-}   
+}
 
 .rectangle{
     background-color:#EAEAEA;
@@ -433,7 +433,7 @@
 
 .how-we-work-bottom{
     position: relative;
-    text-align: center;
+    text-align: left;
     margin-top: 50px;
 }
 
@@ -442,7 +442,7 @@
 }
 
 .how-work-left-parent{
-    text-align: right;
+    text-align: left;
 }
 
 .how-work-right-parent{
@@ -682,7 +682,7 @@
     position: relative;
     padding: 50px 20px;
 }
-    
+
 .close-x{
     background: red;
     color: #ffffff;
