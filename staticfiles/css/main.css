@@ -161,13 +161,13 @@
 
 .banner-logo-single{
     margin-right: 40px;
-    width: 35px;
+    /* width: 50px; */
 }
 
 .about{
     display: flex;
     justify-content: space-evenly;
-}
+}   
 
 .rectangle{
     background-color:#EAEAEA;
@@ -235,9 +235,9 @@
 .services{
     padding: 100px 0px;
 }
-.outsourcing{
+/* .outsourcing{
 
-}
+} */
 
 .session-header{
     margin-bottom: 50px;
@@ -382,8 +382,14 @@
     margin-left: 150px;
 }
 
-.offer-single-content-img{
-    width: 390px
+.offer-single-content img{
+    /* width: 120px; */
+    margin-left: 130px;
+}
+
+.offer-single-content p{
+    margin-top: 25px;
+    text-align: center;
 }
 
 .how-we-work-section{
@@ -433,7 +439,7 @@
 
 .how-we-work-bottom{
     position: relative;
-    text-align: left;
+    text-align: center;
     margin-top: 50px;
 }
 
@@ -442,7 +448,7 @@
 }
 
 .how-work-left-parent{
-    text-align: left;
+    text-align: right;
 }
 
 .how-work-right-parent{
@@ -460,7 +466,7 @@
 
 .team-main{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 50px;
 }
 
@@ -682,7 +688,7 @@
     position: relative;
     padding: 50px 20px;
 }
-
+    
 .close-x{
     background: red;
     color: #ffffff;
@@ -771,4 +777,8 @@
     top: -12px;
     cursor: pointer;
     transition: all 0.3s ease-in;
+}
+
+.circular-image{
+    border-radius: 5em;
 }

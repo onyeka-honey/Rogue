@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 
@@ -10,7 +11,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" />
 
   <!-- FONTS -->
   <link
@@ -27,7 +28,7 @@
         <a class="navbar-brand" href="#">
 
           <div style="height: 100px;">
-            <img src="./image/ROUMPINI RESOURCES LOGO (1).png" height="100%" />
+            <img src="{% static 'image/roumpinilogo.png' %}" height="100%" />
           </div>
 
         </a>
@@ -53,6 +54,9 @@
             <li class="nav-item nav-content-item" id="move-link">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
+            <li class="nav-item nav-content-item" id="move-link">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
           </ul>
 
         </div>
@@ -63,22 +67,22 @@
         <div>
           <div class="banner-content-main">
             <h2 class="banner-content-header">Grow your business and support your team.</h2>
-            <p class="banner-content-subheader">Supporting business and the people who drive them..</p>
-            <a class="banner-cta" href="#">
+            <p class="banner-content-subheader">Supporting businesses and the people who drive them..</p>
+            <a class="banner-cta" href="#contact">
               Contact now
             </a>
           </div>
           <div class="banner-logos">
-            <img src="image/sample-logo.svg" alt="" class="banner-logo-single">
-            <img src="image/sample-logo1.svg" alt="" class="banner-logo-single">
-            <img src="image/sample-logo2.svg" alt="" class="banner-logo-single">
-            <img src="image/sample-logo3.svg" alt="" class="banner-logo-single">
+            <img src="{% static 'image/Rochester-logo1-2.png' %}" alt="" class="banner-logo-single" width="55">
+            <img src="{% static 'image/union-diagnostic.png' %}" alt="" class="banner-logo-single" width="65">
+            <img src="{% static 'image/cropped-Wemy-Logo-Menu-Bar-3.png' %}" alt="" class="banner-logo-single" width="85">
+            <img src="{% static 'image/Cedar-Hive-White-01-01-1-e1575379127722.png' %}" alt="" class="banner-logo-single" width="130">
           </div>
         </div>
       </div>
       <div class="banner-image">
         <div class="banner-holder">
-          <img src="image/bg-banner.png" class="banner-img-main" />
+          <img src="{% static 'image/bg-banner.jpg' %}" class="banner-img-main" />
         </div>
       </div>
     </div>
@@ -86,19 +90,19 @@
   <div class="rectangle who-we-are" id="about">
     <div class="container about">
       <div>
-        <img src="image/Man.png" class="who-we-are-img" />
+        <img src="{% static 'image/Man.png' %}" class="who-we-are-img" />
       </div>
       <div class="Roumpini">
         <h6 class="small-header-red small-header">Welcome</h6>
         <h3 class="gen-main-header">Who we are?</h3>
-        <p class="gen-main-body">Roumpini Resources is a affront line firm with best practice standards</br>
-          with our services in outsourcing/recruitment ,protocol management, training </br>
-          and insights. our clients benefit from the best thinking to the most </br> responsive
+        <p class="gen-main-body">Roumpini Resources is a front line firm with best practice standards</br>
+          with our services in outsourcing/recruitment, protocol management and training. </br>
+         Our clients benefit from the best thinking to the most responsive
           human capital consultancy.
         </p>
         <div class="small-header-red cta-text">
-          Speak to us
-          <img src="image/left-arrow.svg" />
+         <a href="#contact"> Speak to us
+          <img src="{% static 'image/left-arrow.svg' %}" /></a>
         </div>
       </div>
     </div>
@@ -113,7 +117,7 @@
         <div class="card">
           <div class="card-body">
             <div class="card-img-holder">
-              <img src="image/integrity.svg" alt="" class="card-img">
+              <img src="{% static 'image/integrity.svg' %}" alt="" class="card-img">
             </div>
             <h3 class="card-title">Integrity</h3>
             <p class="card-text">Our integrity fosters trust</br>
@@ -124,7 +128,7 @@
         <div class="card">
           <div class="card-body">
             <div class="card-img-holder">
-              <img src="image/excellence.svg" alt="" class="card-img">
+              <img src="{% static 'image/excellence.svg' %}" alt="" class="card-img">
             </div>
             <h3 class="card-title">Excellence</h3>
             <p class="card-text">We Inspire people to give </br>
@@ -135,7 +139,7 @@
         <div class="card">
           <div class="card-body">
             <div class="card-img-holder">
-              <img src="image/result-d.svg" alt="" class="card-img">
+              <img src="{% static 'image/result-d.svg' %}" alt="" class="card-img">
             </div>
             <h3 class="card-title">Result Driven</h3>
             <p class="card-text">We Invest time and resources</br>
@@ -146,7 +150,7 @@
         <div class="card">
           <div class="card-body">
             <div class="card-img-holder">
-              <img src="image/knowledge.svg" alt="" class="card-img">
+              <img src="{% static 'image/knowledge.svg' %}" alt="" class="card-img">
             </div>
             <h3 class="card-title">Knowledge</h3>
             <p class="card-text">We celebrate new and fresh approaches to</br>
@@ -163,40 +167,40 @@
       <div class="services-main">
         <div class="outsourcing">
           <div class="services-main-header">
-            <h6 class="small-header-red small-header"> our offerings</h6>
+            
             <h3 class="gen-main-header"> What we offer</h3>
           </div>
 
           <div class="offer-single-holder">
             <div class="offer-single offer-single-active" id="offer-1">
-              <img src="image/correct.svg" alt="" class="offer-single-img">
+              <img src="{% static 'image/correct.svg' %}" alt="" class="offer-single-img">
               <p class="offer-single-text">Outsourcing</p>
             </div>
           </div>
 
           <div class="offer-single-holder">
             <div class="offer-single" id="offer-2">
-              <img src="image/correct.svg" alt="" class="offer-single-img">
-              <p class="offer-single-text">Learning and development</p>
+              <img src="{% static 'image/correct.svg' %}" alt="" class="offer-single-img">
+              <p class="offer-single-text">Learning and Development</p>
             </div>
           </div>
 
           <div class="offer-single-holder">
             <div class="offer-single" id="offer-3">
-              <img src="image/correct.svg" alt="" class="offer-single-img">
-              <p class="offer-single-text">Recuritment and executive Search</p>
+              <img src="{% static 'image/correct.svg' %}" alt="" class="offer-single-img">
+              <p class="offer-single-text">Recruitment and Executive Search</p>
             </div>
           </div>
 
           <div class="offer-single-holder">
             <div class="offer-single" id="offer-4">
-              <img src="image/correct.svg" alt="" class="offer-single-img">
-              <p class="offer-single-text">Immigration consultancy and Protocol Management</p>
+              <img src="{% static 'image/correct.svg' %}" alt="" class="offer-single-img">
+              <p class="offer-single-text">Immigration Consultancy and Protocol Management</p>
             </div>
           </div>
         </div>
 
-        <div class="text-center offer-single-content">
+        <div class="offer-single-content">
 
         </div>
       </div>
@@ -207,14 +211,16 @@
     <div class="container how-we-work-inner">
       <div class="how-work-header">
         <p class="text-center small-header-red small-header">How we work</p>
-        <h3 class=" text-center gen-main-header">Our Approach To HR Recuritment </h3>
+        <h3 class=" text-center gen-main-header">Our Approach To HR Recruitment </h3>
       </div>
       <div class=" text-center how-we-work-main">
         <div class="how-we-work-content">
           <div class="how-work-left-parent how-work-width">
             <h6 class="gen-main-header">Definition of Client’s needs & Expectation</h6>
-            <p class="gen-main-body">Obtain a precise understanding of
-              clients expectations.Define the profile description</p>
+              <ul style="list-style-type:disc;">
+                <li>Obtain a precise understanding of clients expectations.</li> 
+                <li>Define the profile description.</li>
+              </ul>
           </div>
           <div class="how-work-left-parent how-work-width">
             <h6 class="gen-main-header">Advertising & Sourcing through
@@ -222,17 +228,12 @@
               <ul style="list-style-type:disc; padding-left: 20px;">
                 <li>Professional and social networking</li>
                 <li>Advertising in regional press & online</li>
-                <li>Direct sourcing or headhunting</li>
-                <li>Events</li>
-                <li>Participating in career fairs on behalf of clients</li>
-
-
               </ul>
           </div>
         </div>
 
         <div class="how-we-work-img">
-          <img src="image/approach.png" alt="alt" class="how-middle-img">
+          <img src="{% static 'image/approach.jpg' %}" alt="alt" class="how-middle-img">
         </div>
 
         <div class="how-we-work-content">
@@ -241,70 +242,45 @@
             <ul style="list-style-type:disc; padding-left: 20px;">
               <li> Evaluation of the candidates through phone, face-to-face or digital platform interview;</li>
               <li> Assessments and test (technical and psychometric)</li>
-              <li> Reference checks</li>
             </ul>
           </div>
           <div class="how-work-right-parent how-work-width">
             <h6 class="gen-main-header">Candidate Submission</h6>
-            <ul style="list-style-type:disc; padding-left: 20px;">
-              <li>Presentation of each candidate to the client with</li>
-              <li>CV</li>
-              <li>Application form</li>
+            <ul style="list-style-type:disc;">
+              <li>Presentation of each candidate to the client with CV</li>
               <li>Debrief of the interviews and eventual test results.</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="how-we-work-bottom how-work-center-parent how-work-width">
-        <h6 class="gen-main-header">Project Closure</h6>
-        <ul style="list-style-type:disc; padding-left: 20px;">
-          <li>Review actual deliverables against target</li>
-          <li>Close contract and finalise report.</li>
-
-        </ul>
-      </div>
-
     </div>
   </div>
 
   <section class="team-section" id="teams">
     <div class="container">
       <div class="text-center team-header">
-        <p class="small-header small-header-red">Best talents</p>
         <h3 class="gen-main-header">Our Team</h3>
       </div>
 
       <div class="team-main">
         <div class="team-main-holder" id="team-1">
-          <img src="image/lara.png" alt="" class="team-img">
-          <p class="team-name">Lara</p>
+          <img src="{% static 'image/lara.png' %}" alt="" class="team-img">
+          <p class="team-name">Omolara Norman</p>
           <div class="team-role-img">
-            <h2 class="team-role">Role</h2>
-            <a href="#" class="team-social-link">
-              <img src="image/linkedin.svg" alt="" class="team-social-icon">
-            </a>
+            <h2 class="team-role">Lead Consultant</h2>
+            <!-- <a href="#" class="team-social-link">
+              <img src="{% static 'image/linkedin.svg' %}" alt="" class="team-social-icon">
+            </a> -->
           </div>
         </div>
-
-        <div class="team-main-holder" id="team-2">
-          <img src="image/lara.png" alt="" class="team-img">
-          <p class="team-name">Lara</p>
-          <div class="team-role-img">
-            <h2 class="team-role">Role</h2>
-            <a href="#" class="team-social-link">
-              <img src="image/linkedin.svg" alt="" class="team-social-icon">
-            </a>
-          </div>
-        </div>
-
         <div class="team-main-holder" id="team-3">
-          <img src="image/lara.png" alt="" class="team-img">
-          <p class="team-name">Lara</p>
+          <img src="{% static 'image/manu-replace.jpeg' %}" alt="" class="team-img circular-image">
+          <p class="team-name">Emmanuel Faith</p>
           <div class="team-role-img">
-            <h2 class="team-role">Role</h2>
-            <a href="#" class="team-social-link">
-              <img src="image/linkedin.svg" alt="" class="team-social-icon">
-            </a>
+            <h2 class="team-role">Associate Consultant</h2>
+            <!-- <a href="#" class="team-social-link">
+              <img src="{% static 'image/linkedin.svg' %}" alt="" class="team-social-icon">
+            </a> -->
           </div>
         </div>
 
@@ -324,55 +300,53 @@
   <footer class="footer-section" id="contact">
     <div class="container">
       <div class="request-card">
-        <h2 class="contact-content">We work together with industry experts in thier fields To offer you all-in-one
-          solutions and starting points
-          For your own solutions</h2>
+        <h2 class="contact-content">We work together with industry experts in their fields to offer you all-in-one
+          solutions and starting points for your own solutions</h2>
         <button class="banner-cta contact-cta">Get In Touch</button>
       </div>
 
       <div class="footer-main">
         <div>
-          <img src="image/roumpini-logo.svg" alt="" class="footer-logo">
+          <img src="{% static 'image/roumpinilogo.png' %}" alt="" class="footer-logo">
         </div>
-        <div>
+        <div class="footer-single__section">
           <p class="footer-main-header">Company</p>
           <ul class="footer-main-ul">
             <a href="#" class="footer-main-li-link">
               <li>Home</li>
             </a>
-            <a href="#" class="footer-main-li-link">
+            <a href="#about" class="footer-main-li-link">
               <li>About</li>
             </a>
-            <a href="#" class="footer-main-li-link">
+            <a href="#services" class="footer-main-li-link">
               <li>Services</li>
             </a>
-            <a href="#" class="footer-main-li-link">
+            <a href="#teams" class="footer-main-li-link">
               <li>Team</li>
             </a>
-            <a href="#" class="footer-main-li-link">
+            <a href="#contact" class="footer-main-li-link">
               <li>Contact us</li>
             </a>
           </ul>
         </div>
-        <div>
+        <div class="footer-single__section">
           <p class="footer-main-header">Contact</p>
           <div>
-            <p class="footer-address-phone">Lorem ipsum</p>
-            <p class="footer-address-phone">Lorem ipsum</p>
-            <p class="footer-address-phone">+23470123456789</p>
+            <p class="footer-address-phone">Herbert Maculay Way Yaba Lagos</p>
+            <p class="footer-address-phone">+2348172165751</p>
           </div>
         </div>
-        <div>
-          <a href="" class="footer-email">info@roumpini.com</a>
+        <div class="footer-single__section">
+          <a href="" class="footer-email">hello@roumpiniresource.com</a>
           <div class="footer-social">
             <a href="" class="footer-social-single">
-              <img src="image/facebook.svg" alt="">
+              <img src="{% static 'image/facebook.svg' %}" alt="">
             </a>
             <a href="" class="footer-social-single">
-              <img src="image/twitter.svg" alt="">
+              <img src="{% static 'image/twitter.svg' %}" alt="">
             </a>
-            <a href="" class="footer-social-single">
-              <img src="image/linkd.svg" alt="">
+            <a href="https://instagram.com/roumpini.resources?igshid=44aeejexqwgm" class="footer-social-single">
+              <img src="{% static 'image/instagram.jpeg' %}" height="20px" width="20px" alt="">
             </a>
           </div>
         </div>
@@ -384,7 +358,8 @@
     <div class="contact-modal-main">
       <div class="close-form">X</div>
       <div>
-        <form action="">
+        <form action="{% url 'messenger' %}" method="POST">
+          {% csrf_token %}
           <div class="form-field-single">
             <label for="name" class="form-label">Full name</label>
             <input type="text" name="name" class="form-input name">
@@ -425,8 +400,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="javascripts/jquery.easing.1.3.js"></script>
-  <script src="javascripts/script.js"></script>
+  <script src="{% static 'javascripts/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'javascripts/script.js' %}"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
 
   <script>
@@ -437,20 +412,20 @@
       let offerSelect = id => {
         switch (id) {
           case 'offer-1':
-            return (
-              $('<div>Offer one</div>').appendTo('.offer-single-content')
+            return (null
+              // $("<img src=\"{% static 'image/outsourcing.jpg' %}\"><p>HR Outsourcing Services (Interim HR Managers)</p>").appendTo('.offer-single-content')
             )
           case 'offer-2':
-            return (
-              $('<div>Offer two</div>').appendTo('.offer-single-content')
+            return ( null
+              // $("<img src=\"{% static 'image/learnin.jpg' %}\" height=400 width=400><p><ul><li>Define learning and development strategy and related programmes appropriate for your organisation.</li><li>Design, develop and implement competency skills and knowledge frameworks</li><li>Facilitate management retreat programmes </li><li>Organise seminars, workshops & conferences/forums, special events</li></ul></p>").appendTo('.offer-single-content')
             )
           case 'offer-3':
-            return ($('<div>Offer three</div>').appendTo('.offer-single-content'))
+            return null //($("<img src=\"{% static 'image/recruit.jpg' %}\"><ul><li>Executive Search Services</li><li>E-Recruitment / CV Handling / Mass Recruitment</li><li>Resume / Certificate Verification</li><li>Reference Checking</li><li>Integrity Due Diligence</li></ul>").appendTo('.offer-single-content'))
           case 'offer-4':
-            return ($('<div>Offer four</div>').appendTo('.offer-single-content'))
+            // return ($("<img width=400 height=400 src=\"{% static 'image/immigration.jpg' %}\"><ul><li>Processing of all classes of Visas</li><li>Processing / Renewal / Additions of Quota Approval</li><li>Regularisation of Visa</li><li>General itinerary advisory</li><li>Hotel and Flight Reservations both international and local</li><li>Protocol services (Meet & Greet): Aiding immigration process at the airport upon arrival of guest(s).</li></ul>").appendTo('.offer-single-content'))
           default:
-            return (
-              $('<div>Offer one</div>').appendTo('.offer-single-content')
+            return ( null
+              // $("<img src=\"{% static 'image/outsourcing.jpg' %}\"><p>HR Outsourcing Services (Interim HR Managers)</p>").appendTo('.offer-single-content')
             )
         }
       }
@@ -462,15 +437,15 @@
         switch (id) {
           case 'team-1':
             return (
-              $('<div>Team one</div>').appendTo('.team-modal-content')
+              $('<div>Omolara Norman is an Experienced Human Resource Professional with over 10 years’ experience. Her diverse interdisciplinary skills have been laid to bare in how she solves a personnel-related most difficult problem</div>').appendTo('.team-modal-content')
             )
           case 'team-2':
             return (
-              $('<div>Team two</div>').appendTo('.team-modal-content')
+              $('<div>Mr. Segun-Niyi Adedoyin holds a Bachelor of Science Degree in Botany from University of Ilorin, Nigeria. He is a seasoned consultant with over seventeen years of experience in medium and largescale industries. Segun-Niyi has worked and consult for various organizations such as manufacturing, financial services, training, consulting, construction and oil &amp; gas industries.</div>').appendTo('.team-modal-content')
             )
           case 'team-3':
             return (
-              $('<div>Team three</div>').appendTo('.team-modal-content')
+              $('<div>A Proficient Human Resource professional with core competencies that cut across Recruitment and Selection, Workforce Planning, Organization Design, Payroll Management and Talent Management. Emmanuel will utilise his skills and capacity in enhancing the organisation’s productivity.</div>').appendTo('.team-modal-content')
             )
         }
 
